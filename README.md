@@ -44,4 +44,4 @@ Technologies used in the project:
 
 <h2>💖Like my work?</h2>
 
-Reach out to me via vedant.storm@gmail.com
+Reach out to me via [vedant.storm@gmail.com](mailto:vedant.storm@gmail.com)
