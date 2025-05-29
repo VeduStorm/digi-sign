@@ -28,7 +28,7 @@ with open("details.txt", 'r') as file:
 def resource_path(relative_path):
     base_path = os.path.abspath(os.path.dirname(__file__))
     if hasattr(sys, '_MEIPASS'):
-        base_path = os.path.join(tempfile.gettempdir(), "ShadowCrypt")
+        base_path = os.path.join(tempfile.gettempdir(), "DigiSign")
     full_path = os.path.join(base_path, relative_path)
     os.makedirs(os.path.dirname(full_path), exist_ok=True)
     return full_path
@@ -56,7 +56,7 @@ def generate_self_signed_cert():
 
     public_key = private_key.public_key()
     subject = issuer = Name([
-        NameAttribute(ObjectIdentifier("2.5.4.3"), Name)
+        NameAttribute(ObjectIdentifier("2.5.4.3"), content)
     ])
     cert = (
         CertificateBuilder()
@@ -165,7 +165,7 @@ class CodeSignerUI(QMainWindow):
     def __init__(self):
         super().__init__()
         CodeSignerUI.instance = self
-        self.setWindowTitle("ShadowCrypt Signer")
+        self.setWindowTitle("DigiSign")
         self.setGeometry(100, 100, 900, 700)
         self.is_dark_theme = True
         self.dark_stylesheet = load_stylesheet("DARK")
@@ -188,7 +188,7 @@ class CodeSignerUI(QMainWindow):
         self.main_layout.setContentsMargins(30, 20, 30, 30)
         self.main_layout.setSpacing(20)
 
-        self.header = HeaderWidget("ShadowCrypt Signer", "Secure File Signing")
+        self.header = HeaderWidget("DigiSign", "Secure File Signing")
         self.main_layout.addWidget(self.header)
 
         self.card = CardWidget()
