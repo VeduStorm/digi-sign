@@ -1,0 +1,160 @@
+* {
+    font-family: 'Georgia', -apple-system, BlinkMacSystemFont, sans-serif;
+    color: #ffffff;
+}
+
+QMainWindow, QWidget {
+    background-color: #121212;
+}
+
+QFrame#mainCard {
+    background-color: #1e1e1e;
+    border-radius: 12px;
+    border: 1px solid #2d2d2d;
+}
+
+QTextEdit {
+    font-family: 'Courier New', monospace;
+    font-size: 13px;
+    border: 1px solid #2d2d2d;
+    border-radius: 6px;
+    padding: 10px;
+    background-color: #262626;
+    color: #ffffff;
+}
+
+QTextEdit:focus {
+    border: 1px solid #0d84ff;
+    outline: none;
+}
+
+QPushButton {
+    background-color: #0d84ff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 24px;
+    font-size: 14px;
+    font-weight: 500;
+    min-width: 120px;
+}
+
+QPushButton:hover {
+    background-color: #1a91ff;
+}
+
+QPushButton:pressed {
+    background-color: #0066cc;
+}
+
+QPushButton:disabled {
+    background-color: #404040;
+    color: #808080;
+}
+
+QPushButton#secondary {
+    background-color: transparent;
+    color: #0d84ff;
+    border: 1px solid #0d84ff;
+}
+
+QPushButton#secondary:hover {
+    background-color: rgba(13, 132, 255, 0.1);
+}
+
+QPushButton#secondary:pressed {
+    background-color: rgba(13, 132, 255, 0.2);
+}
+
+QPushButton#secondary:disabled {
+    border-color: #404040;
+    color: #808080;
+}
+
+QLabel {
+    color: #ffffff;
+}
+
+QLabel#titleLabel {
+    font-size: 28px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+QLabel#subtitleLabel {
+    font-size: 15px;
+    color: #b3b3b3;
+}
+
+QLabel#sectionLabel {
+    font-size: 16px;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+QMessageBox {
+    background-color: #1e1e1e;
+}
+
+QMessageBox QLabel {
+    color: #ffffff;
+    font-size: 15px;
+}
+
+QMessageBox QPushButton {
+    min-width: 80px;
+}
+
+QTabWidget::pane {
+    border: 1px solid #2d2d2d;
+    border-radius: 6px;
+    background-color: #1e1e1e;
+}
+
+QTabWidget::tab-bar {
+    alignment: left;
+}
+
+QTabBar::tab {
+    background-color: #262626;
+    color: #b3b3b3;
+    padding: 8px 16px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    margin-right: 2px;
+}
+
+QTabBar::tab:selected {
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+
+QTabBar::tab:hover:!selected {
+    background-color: #2d2d2d;
+}
+
+QStatusBar {
+    background-color: #1e1e1e;
+    color: #b3b3b3;
+}
+
+QFileDialog {
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+
+QFileDialog QLabel {
+    color: #ffffff;
+}
+
+QFileDialog QPushButton {
+    min-width: 80px;
+}
+
+QFileDialog QLineEdit {
+    background-color: #262626;
+    border: 1px solid #2d2d2d;
+    border-radius: 4px;
+    padding: 5px;
+    color: #ffffff;
+}

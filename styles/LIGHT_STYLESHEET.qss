@@ -1,0 +1,70 @@
+* {
+    font-family: 'Georgia', -apple-system, BlinkMacSystemFont, sans-serif;
+    color: #333333;
+}
+QMainWindow, QWidget {
+    background-color: #f8f9fa;
+}
+QFrame#mainCard {
+    background-color: white;
+    border-radius: 12px;
+    border: 1px solid #e0e0e0;
+}
+QTextEdit {
+    font-family: 'Courier New', monospace;
+    font-size: 13px;
+    border: 1px solid #ced4da;
+    border-radius: 6px;
+    padding: 10px;
+    background-color: #f8f9fa;
+    color: #333333;
+}
+QTextEdit:focus {
+    border: 1px solid #4a90e2;
+    outline: none;
+}
+QPushButton {
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 24px;
+    font-size: 14px;
+    font-weight: 500;
+    min-width: 120px;
+}
+QPushButton:hover {
+    background-color: #3a7bc8;
+}
+QPushButton:pressed {
+    background-color: #2a6bb8;
+}
+QPushButton#secondary {
+    background-color: transparent;
+    color: #4a90e2;
+    border: 1px solid #4a90e2;
+}
+QPushButton#secondary:hover {
+    background-color: #f0f7ff;
+}
+QPushButton#secondary:pressed {
+    background-color: #e0f0ff;
+}
+QLabel#titleLabel {
+    font-size: 28px;
+    font-weight: 600;
+    color: #2c3e50;
+}
+QLabel#subtitleLabel {
+    font-size: 15px;
+    color: #7f8c8d;
+}
+QMessageBox {
+    background-color: white;
+}
+QMessageBox QLabel {
+    font-size: 15px;
+}
+QMessageBox QPushButton {
+    min-width: 80px;
+}
